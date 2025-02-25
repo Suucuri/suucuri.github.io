@@ -1,0 +1,4 @@
+img[alt=pic] { width: 200px; }
+.ace_editor {word-spacing: 0 !important;}
+
+span.curversion::after {content: " ⚔️️ 24.12x0";}
