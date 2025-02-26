@@ -1,4 +1,7 @@
 img[alt=pic] { width: 200px; }
 .ace_editor {word-spacing: 0 !important;}
 
-span.curversion::after {content: " ⚔️️ 24.12x0";}
+span.curversion::after {
+    content: " 🐍 Eunectes Murinus 🐁 25.02b";
+    font-size: 8px;
+}
