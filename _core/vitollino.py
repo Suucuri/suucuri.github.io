@@ -95,7 +95,8 @@ def set_doc_pydiv(doc_id):
 
 ppcss = 'https://codepen.io/imprakash/pen/GgNMXO'
 # STYLE = {'position': "absolute", 'width': SZ['W'], 'left': 0, 'top': 0}
-STYLE = {'position': "absolute", 'width': "500px", "minHeight": "500px", 'left': "300px", 'top': 0}
+# STYLE = {'position': "absolute", 'width': "500px", "minHeight": "500px", 'left': "300px", 'top': 0}
+STYLE = {'position': "absolute", 'width': "500px", "minHeight": "500px", 'left': 0, 'top': 0}
 PSTYLE = {'position': "absolute", 'width': SZ['W'], 'left': 0, 'bottom': 0}
 LIMBOSTYLE = {'position': "absolute", 'width': SZ['W'], 'left': 10000, 'bottom': 0, 'background': "white"}
 ISTYLE = {'opacity': "inherited", 'height': 30, 'left': 0, 'top': 0, 'background': "white"}

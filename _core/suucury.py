@@ -34,24 +34,21 @@ class Lax:
     def __init__(self):
         def calc_parallax(x, y, item):
             conta_, lado_ = x - 1 if x > 1 else 1, y - 1 if y > 1 else 1
-            dw, dh = (100 / conta_) * (item % FX), (100 / lado_) * (item // FX)
+            dw, dh = (100 / conta_) * (item % x), (100 / lado_) * (item // x)
             return conta_, lado_, dw, dh
 
         self.calc = calc_parallax
         self.walk = self.right
         self.spriter, self.spritel = 3, 2
         self.c = Cena(MATA0)
-        self.c.elt.style.left = 300
         self.c.elt.style.overflow = "hidden"
         self.c.vai()
         self.layers = [Elemento(w=4000, h=700, cena=self.c) for _ in range(LAYERS)]  # [list()]*LAYERS
         self.scenery()
-        # document.bind("keydown", self.anda)
         self.kiri = Elemento(KIRI, w=130, h=250, x=600, y=400, cena=self.c)
         kr = self.sprite_kiri(self.spriter, Elemento(KIRI, w=25, h=50, x=1200, y=400, cena=self.c, vai=self.right))
         kl = self.sprite_kiri(self.spritel, Elemento(KIRI, w=25, h=50, x=50, y=400, cena=self.c, vai=self.left))
         self.k = self.sprite_kiri(self.spriter, self.kiri)
-        # self.k.bind("click", self.right)
 
     def left(self, evento):
         evento.stopPropagation()
@@ -86,12 +83,8 @@ class Lax:
 
     def sprite_kiri(self, item, e):
         """Near layer should be more spaced"""
-        # item = ly+1
-        # conta_, lado_ = KX - 1 if KX > 1 else 1, KY - 1 if KY > 1 else 1
         conta_, lado_, dw, dh = self.calc(KX, KY, item)
-        # dw, dh = (100 / conta_) * (item % KX), (100 / lado_) * (item // KX)
         bp = f"{dw:.2f}% {dh:.2f}%"
-        # e = Elemento(KIRI, w=130, h=250, x=x, y=y, cena=self.c)
         e.elt.style.backgroundSize = f"{KX * 100}% {KY * 100}%"
         e.elt.style.backgroundPosition = bp
         return e.elt
@@ -99,15 +92,11 @@ class Lax:
     def sprite(self, x, y, item, layer, ly, elt=None):
         """Near layer should be more spaced"""
         item = randint(0, 14)
-        # item = ly+1
         layer_delta_y = 400 // LAYERS
-        # conta_, lado_ = FX - 1 if FX > 1 else 1, FY - 1 if FY > 1 else 1
         conta_, lado_, dw, dh = self.calc(FX, FY, item)
-        # dw, dh = (100 / conta_) * (item % FX), (100 / lado_) * (item // FX)
         bp = f"{dw:.2f}% {dh:.2f}%"
         size = TREES - layer * 30
         e = elt or Elemento(FLORA, w=size - 10, h=size, x=x, y=y - layer * layer_delta_y, cena=self.c)
-        # e.o = ly / 10 + 0.4
         e.elt.style.backgroundSize = f"{FX * 100}% {FY * 100}%"
         e.elt.style.backgroundPosition = bp
         return e.elt
