@@ -6,8 +6,8 @@ PDX-License-Identifier:** `GNU General Public License v3.0 or later <http://is.g
 > E agora para algo totalmente diferente! <br>
 > Aprenda Python resolvendo, modificando e criando desafios e jogos
 
-![SuuCuriJuba - A cobra que Programa](_media/suucurijuba.png)
-
+![SuuCuriJuba - A Cobra que Programa](_media/suucurijuba.png)
+> Sucurijuba é um termo oriundo do tupi e significa "Sucuri Amarela"
 ## Uma História com Muito Envolvimento, onde você é o Herói
 Neste jogo você acompanha um enredo complexo com muitas tramas.
 E em cada parágrafo você tem que contribuir com seus novos conhecimentos.
@@ -22,7 +22,7 @@ do antigo Pajé. Ela lembra da magia da cobra de fogo, a Python Boitatá.
 **Autor:** `Carlo E. T. Oliveira` </br>
 **Affiliation:** `Universidade Federal do Rio de Janeiro` </br>
 **License:** `GNU General Public License v3 or later (GPLv3+)`</br>
-**Homepage:** [SuuCuriJuba - A cobra que Programa]</br>
+**Homepage:** [SuuCuriJuba - A Cobra que Programa]</br>
 **Changelog:** [CHANGELOG](CHANGELOG.MD)</br>
 
 [![python](https://img.shields.io/github/languages/top/kwarwp/kwarwp)](https://www.python.org/downloads/release/python-3131/)
@@ -33,4 +33,4 @@ do antigo Pajé. Ela lembra da magia da cobra de fogo, a Python Boitatá.
 [![NCE](https://labase.github.io/image/nce-logo-8.png)](http://www.nce.ufrj.br/)
 [![LABASE](https://labase.github.io/image/labase-logo-8.png)](http://labase.github.io/)
 
-[SuuCuriJuba - A cobra que Programa]: http://activufrj.nce.ufrj.br/wiki/labase//SuuCuriJuba
+[SuuCuriJuba - A Cobra que Programa]: http://Suucuri.activufrj.nce.ufrj.br
